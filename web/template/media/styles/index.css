@@ -1,0 +1,65 @@
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: xx-large;
+    margin-top: 15%;
+}
+
+.url-submission-form form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.url-submission-form input:focus {
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+    outline-width: 0px;
+    border: none;
+}
+
+.url-submission-form input[type="text"] {
+    border-radius: 10px;
+    height: 40px;
+    width: 40%;
+    border: none;
+    font-family: "Anta", sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+.url-submission-form button {
+    width: 150px;
+    border-radius: 10px;
+    font-family: "Anta", sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 20px;
+    color: #111828;
+    background-color: #8AFEE0;
+    cursor: pointer;
+}
+
+.result-section {
+    display: flex;
+    border-radius: 15px;
+    opacity: 0.2;
+    background-color: white;
+    margin-top: 30px;
+    width: 40%;
+    min-height: 150px;
+    margin-left: 24%;
+}
