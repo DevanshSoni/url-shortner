@@ -1,6 +1,5 @@
 from django.db import models
 from django.http import Http404
-from django.core.cache import cache
 
 import redis
 import os
@@ -113,8 +112,8 @@ class URL(models.Model):
 class RedisService:
     @classmethod
     def set(cls, key: str, value: any):
-        return cache.set(key, value)
+        return redis_instance.set(key, value)
 
     @classmethod
     def get(cls, key: str):
-        return cache.get(key)
+        return redis_instance.get(key)
